@@ -1,6 +1,6 @@
 from tkinter import *
 
-# Funciones
+# --Funciones--S
 def abrirArchivo():
     print('Abrir Archivo')
 
@@ -25,6 +25,7 @@ cerrarImagen = PhotoImage(file='C:\\Users\\japol\\Pictures\\Saved Pictures\\cerr
 menuBar = Menu(root)
 root.configure(menu=menuBar)
 
+#--Menu--
 fileMenu = Menu(menuBar, tearoff=0, font=('MV Boli',15))
 menuBar.add_cascade(label='Archivo', menu=fileMenu)
 fileMenu.add_command(label='Abrir', command=abrirArchivo, image=abrirImagen, compound='left')
@@ -32,6 +33,7 @@ fileMenu.add_command(label='Guardar', command=guardarArchivo, image=guardarImage
 fileMenu.add_separator()
 fileMenu.add_command(label='Salir', command=quit, image=cerrarImagen, compound='left')
 
+#--Menu--
 editMenu = Menu(menuBar, tearoff=0, font=('MV Boli',15))
 menuBar.add_cascade(label='Editar', menu=editMenu)
 editMenu.add_command(label='Cortar', command=cortarArchivo)
